@@ -22,7 +22,7 @@ jobs:
     - name: 'Login with Azure CLI'
       uses: azure/login@v1
       with:
-        creds: ${{ secrets.AZURE_CREDENTIALS_2 }}
+        creds: ${{ secrets.AZURE_CREDENTIALS_TEST }}
 
     - name: Setup DotNet ${{ env.DOTNET_VERSION }} Environment
       uses: actions/setup-dotnet@v3
