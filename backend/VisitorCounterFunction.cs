@@ -5,10 +5,10 @@ using Microsoft.Azure.Functions.Worker.Http;
 
 namespace VisitorCounterFunction
 {
-    public class VisistorCounterFunction
+    public class VisitorCounterFunction
     {
 
-        [Function("VisistorCounterFunction")]
+        [Function("VisitorCounterFunction")]
         [CosmosDBOutput("CloudPortfolioDB", "Counter", Connection = "CosmosDBConnection")]
         public async Task<VisitorCounterItem> Run([HttpTrigger(AuthorizationLevel.Function, "get")] HttpRequestData req,
         [CosmosDBInput(databaseName: "CloudPortfolioDB", containerName: "Counter", Connection  = "CosmosDBConnection", Id = "1", PartitionKey = "1")] VisitorCounterItem visitorCounterItem)
