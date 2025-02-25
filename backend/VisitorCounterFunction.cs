@@ -17,7 +17,7 @@ namespace VisitorCounterFunction
             // increment count
             visitorCounterItem.Count++;
 
-            Console.WriteLine("bump8");
+            Console.WriteLine("bump9");
 
             // write an http response
             var response = req.CreateResponse(HttpStatusCode.OK);
